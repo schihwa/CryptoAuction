@@ -1,2 +1,5 @@
 # Ignore the tasks folder
-tasks/
+/tasks/
+bin/
+
+*zip
