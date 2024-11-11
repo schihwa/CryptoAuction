@@ -1,16 +1,8 @@
 #!/bin/bash
 
-# Create bin directory if it doesn't exist
-mkdir -p CryptoAuction/bin
+# Create the bin directory if it doesn't exist
+mkdir -p bin
 
-# Compile all Java files in the src directory, outputting to the bin directory
-echo "Compiling Java files..."
-javac -d CryptoAuction/bin CryptoAuction/src/*.java
+# Compile all .java files and place the .class files in the bin directory
+javac -d bin *.java
 
-# Check if the compilation was successful
-if [ $? -eq 0 ]; then
-  echo "Compilation successful. All classes are in 'CryptoAuction/bin'."
-else
-  echo "Compilation failed."
-  exit 1
-fi

@@ -1,8 +1,7 @@
 #!/bin/bash
+rmiregistry &
+# Navigate to the bin directory where the compiled .class files are located
 
-
-# Allow a moment for the RMI registry to start
 sleep 2
-
-# Run the Auction Server
-java -cp CryptoAuction/bin Server
+cd bin
+java Server
