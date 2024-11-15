@@ -1,3 +1,3 @@
 #!/bin/bash
 cd bin
-java ClientTest
+java Client
